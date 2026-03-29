@@ -1,19 +1,22 @@
-#include<iostream>
+// #include<iostream>
+#include<bits/stdc++.h>
 #include<vector>
 using namespace std;
 
 int main(){
     vector<int> v;
 
-    for(int i=0; i<5; i++){
-        int x;
-        cin >> x;
+    v.push_back(1);
+    v.push_back(4);
+    v.push_back(19);
+    v.push_back(51);
+    v.push_back(17);
 
-        v.push_back(x);
-    }
+    //sort
+    sort(v.begin(), v.end());
 
     for(int i=0; i<v.size(); i++){
-        cout << v[i];
+        cout << v.at(i) << " ";
     }
     cout << endl;
 }
