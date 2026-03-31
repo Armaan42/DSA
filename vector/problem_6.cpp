@@ -1,4 +1,4 @@
-// WAP to sort all 0's and 1's
+// WAP to sort all 0's and 1's ( two sum method)
 
 #include<bits/stdc++.h>
 using namespace std;
