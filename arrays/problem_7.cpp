@@ -17,21 +17,27 @@ int main(){
 
     cout << endl;
 
-    for(int i=0; i<m; i++){
-        for(int j=0; j<n; j++){
-            cout << arr[i][j] << " ";
+    // cout << "After Transpose" << endl;
+    // for(int j=0; j<n; j++){
+    //     for(int i=0; i<m; i++){
+    //         cout << arr[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    //storing it in the new matrix
+    int t[n][m];
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            t[i][j] = arr[j][i];
+        }
+    }
+
+    //printing the tranpose matrix
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            cout << t[i][j] << " ";
         }
         cout << endl;
     }
-
-    cout << endl;
-
-    cout << "After Transpose" << endl;
-    for(int j=0; j<n; j++){
-        for(int i=0; i<m; i++){
-            cout << arr[i][j] << " ";
-        }
-        cout << endl;
-    }
-
 }
