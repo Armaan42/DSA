@@ -1,6 +1,7 @@
 //max in 2D arrays
 
 #include<iostream>
+#include<climits>
 using namespace std;
 
 int main(){
@@ -15,7 +16,7 @@ int main(){
         }
     }
 
-    int max = 0;
+    int max = INT_MIN;
 
     for(int i=0; i<m; i++){
         for(int j=0; j<n; j++){
