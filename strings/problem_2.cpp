@@ -1,0 +1,24 @@
+// anagrams
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main(){
+
+    string s = "abc";
+    string t = "bac";
+
+    sort(s.begin(), s.end());
+    sort(t.begin(), t.end());
+
+    if(s==t){
+        cout << true;
+    }
+    else{
+        cout << false;
+    }
+    cout << endl;
+
+    return 0;
+}
